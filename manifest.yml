@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: mpal-test-app
+  host: mpal-test-app
+  disk_quota: 1024M
+  services:
+  - Compose for PostgreSQL-m0
+  - availability-monitoring-auto
+  buildpack: python_buildpack
